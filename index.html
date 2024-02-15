@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNISHOP ecommerce website</title>
+
+    <!--Scroll Reveal Js-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--FontAwsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--Linking css file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-------Top Nav-------->
+    <div class="top_nav">
+        <div class="container top_nav_container">
+            <div class="top_nav_wrap">
+                <p class="top_nav_p">
+                    Winter Sale is Live Now with 50% OFF and Free Delivery.
+                </p>
+                <a href="#" class="top_nav_link">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <!-------Main Nav-------->
+    <nav class="nav">
+        <div class="container nav_container">
+            <a href="#" class="nav_logo">UNISHOP</a>
+            <ul class="nav_list">
+                <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">About Us</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+                <li class="nav_item"><a href="signup.html" class="nav_link">Sign Up</a></li>
+            </ul>
+            <div class="social">
+                <form action="#" class="nav_form">
+                    <input type="text" class="nav_input" placeholder="What are you looking for?"/>
+                    <i class="fa-solid fa-magnifying-glass" class="search"></i>
+                </form>
+                <i class="fa-regular fa-heart" class="heart"></i>
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping" class="cart"></i>
+                </a>
+            </div>
+            <span class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+    </nav>
+    <!-------Mobile Nav-------->
+    <nav class="mob_nav mob_hidden">
+        <ul class="mob_list">
+            <li class="mob_item">
+                <a href="/" class="mob_link">Home</a>
+            </li>
+            <li class="mob_item">
+                <a href="#" class="mob_link">About Us</a>
+            </li>
+            <li class="mob_item">
+                <a href="#" class="mob_link">Contact</a>
+            </li>
+            <li class="mob_item">
+                <a href="signup.html" class="mob_link">Sign Up</a>
+            </li>      
+            <li class="mob_item">
+                <a href="cart.html" class="mob_link">Cart</a>
+            </li>      
+        </ul>
+    </nav>
+    <!-- -----Header------ -->
+    <header class="header">
+        <div class="container header_container">
+            <div class="header_filter">
+                <a href="#" class="filter_link"> Mens's Faishon</a>
+                <a href="#" class="filter_link"> Womens's Faishon</a>
+                <a href="#" class="filter_link"> Kid's Faishon</a>
+                <a href="#" class="filter_link"> Electronics</a>
+                <a href="#" class="filter_link"> Home & Furniture</a>
+                <a href="#" class="filter_link"> Sports</a>
+                <a href="#" class="filter_link"> Groceries</a>
+                <a href="#" class="filter_link"> Health & Beauty</a>
+                <a href="#" class="filter_link"> Medicine</a>
+            </div>
+            <img src="1.jpg" alt="Header Image" class="image">
+        </div>
+    </header>
+
+    <!-------scrolling slider (swiper items)-------->
+    <section class="section">
+        <div class="container">
+            <div class="category">
+                <span class="para"></span>
+                <p class="category_p">Deal of the Day</p>
+            </div>
+            <div class="section_head">
+                <h3 class="title">Flash Sale</h3>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Swiper items/01.jpg" alt="" class="card_image">
+                                <div class="tag">-50%</div>
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">PS5 Gaming Console</h3>
+                                <p class="price">₹900</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(101)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="1"
+                                data-title="PS5 Gaming Console"
+                                data-image="Swiper items/01.jpg"
+                                data-price="900"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Swiper items/02.jpg" alt="" class="card_image">
+                                <div class="tag">-60%</div>
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Nike Air IND 570-</h3>
+                                <p class="price">₹5900</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(851)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="2"
+                                data-title="Nike Air 570"
+                                data-image="Swiper items/02.jpg"
+                                data-price="5900"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Swiper items/03.jpeg" alt="" class="card_image">
+                                <div class="tag">-50%</div>
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Glama Brushes</h3>
+                                <p class="price">₹1299</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(136)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="3"
+                                data-title="Glama Brushes"
+                                data-image="Swiper items/03.jpg"
+                                data-price="1299"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Swiper items/04.jpeg" alt="" class="card_image">
+                                <div class="tag">-40%</div>
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Oswal Sofa Set</h3>
+                                <p class="price">₹11790</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(743)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="4"
+                                data-title="Oswal Sofa Set"
+                                data-image="Swiper items/04.jpg"
+                                data-price="11790"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Swiper items/05.jpeg" alt="" class="card_image">
+                                <div class="tag">-30%</div>
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Roadster T-Shirts</h3>
+                                <p class="price">₹799</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(167)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="5"
+                                data-title="Roadster T-Shirts"
+                                data-image="Swiper items/05.jpg"
+                                data-price="799"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Swiper items/06.webp" alt="" class="card_image">
+                                <div class="tag">-70%</div>
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Casio ultra-359</h3>
+                                <p class="price">₹7900</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(520)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="6"
+                                data-title="Casio ultra-359"
+                                data-image="Swiper items/06.jpg"
+                                data-price="7900"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Swiper items/07.webp" alt="" class="card_image">
+                                <div class="tag">-50%</div>
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Coco Channel-Paris</h3>
+                                <p class="price">₹3799</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(299)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="7"
+                                data-title="Coco Channel-Paris"
+                                data-image="Swiper items/07.jpg"
+                                data-price="3799"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Swiper items/08.webp" alt="" class="card_image">
+                                <div class="tag">-60%</div>
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Jaesar Hand Bag</h3>
+                                <p class="price">₹1899</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(344)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="8"
+                                data-title="Jaesar Hand Bag"
+                                data-image="Swiper items/08.jpg"
+                                data-price="1899"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="btn">
+                <a href="#" class="btn_a">VIEW ALL PRODUCTS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-----Categories----->
+    <section class="section">
+        <div class="container">
+            <div class="category">
+                <span class="para"></span>
+                <p class="category_p">Categories</p>
+            </div>
+            <div class="section_head">
+                <h3 class="title">Browse by Categories</h3>
+            </div>
+            <div class="categories">
+                <div class="categ"><i class="fa-solid fa-headphones fa-3x" class="categ_icon"></i> <p class="categ_name">Headphones</p></div>
+                <div class="categ"><i class="fa-solid fa-gamepad fa-3x" class="categ_icon"></i> <p class="categ_name">Gmaepad</p></div>
+                <div class="categ"><i class="fa-solid fa-mobile fa-3x" class="categ_icon"></i> <p class="categ_name">Mobiles</p></div>
+                <div class="categ"><i class="fa-solid fa-couch fa-3x" class="categ_icon"></i> <p class="categ_name">Furniture</p></div>
+                <div class="categ"><i class="fa-solid fa-camera-retro fa-3x" class="categ_icon"></i> <p class="categ_name">Camera</p></div>
+                <div class="categ"><i class="fa-solid fa-laptop fa-3x" class="categ_icon"></i> <p class="categ_name">Laptops</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-------scrolling slider (category items)-------->
+    <section class="section">
+        <div class="container">
+            <div class="category">
+                <span class="para"></span>
+                <p class="category_p">See all deals</p>
+            </div>
+            <div class="section_head">
+                <h3 class="title">Best selling Products</h3>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Category/C1.jpg" alt="" class="card_image">
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Gucci Women's Purse</h3>
+                                <p class="price">₹3299</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(400)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="C1"
+                                data-title="Gucci Women's Purse"
+                                data-image="Category/C1.jpg"
+                                data-price="3299"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Category/C2.jpg" alt="" class="card_image">
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Crimstone L-345 Watch</h3>
+                                <p class="price">₹4999</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(732)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="C2"
+                                data-title="Crimstone L-345 Watch"
+                                data-image="Category/C2.jpg"
+                                data-price="4999"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Category/C3.jpg" alt="" class="card_image">
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Nike Air Max-890</h3>
+                                <p class="price">₹3450</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(1011)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="C3"
+                                data-title="Nike Air Max-890"
+                                data-image="Category/C3.jpg"
+                                data-price="3450"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Category/C4.jpg" alt="" class="card_image">
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Delino WhiteT-Shirt</h3>
+                                <p class="price">₹600</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(511)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="C4"
+                                data-title="Delino WhiteT-Shirt"
+                                data-image="Category/C4.jpg"
+                                data-price="600"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Category/C5.jpg" alt="" class="card_image">
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Iphone R9</h3>
+                                <p class="price">₹29,999</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(5366)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="C5"
+                                data-title="phone R9"
+                                data-image="Category/C5.jpg"
+                                data-price="29,999"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Category/C6.jpg" alt="" class="card_image">
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Desginer Table Chair</h3>
+                                <p class="price">₹3699</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(433)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="C6"
+                                data-title="Desginer Table Chair"
+                                data-image="Category/C6.jpg"
+                                data-price="3699"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Category/C7.jpg" alt="" class="card_image">
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Chanel Lavenrose Perfume</h3>
+                                <p class="price">₹1999</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(199)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="C7"
+                                data-title="Chanel Lavenrose Perfume"
+                                data-image="Category/C7.jpg"
+                                data-price="1999"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_area">
+                                <img src="Category/C8.webp" alt="" class="card_image">
+                                <div class="card_icons">
+                                    <i class="fa-regular fa-heart" class="hrt"></i>
+                                    <i class="fa-regular fa-eye" class="eye"></i>
+                                </div>
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Radian Facewash (100ml)</h3>
+                                <p class="price">₹799</p>
+                                <div class="ratings">
+                                    <div class="rating_stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="rating_numbers">(395)</p>
+                                </div>
+                                <button class="add_cart" 
+                                data-id="C8"
+                                data-title="Radian Facewash (100ml)"
+                                data-image="Category/C8.webp"
+                                data-price="799"
+                                >Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="btn">
+                <a href="#" class="btn_a">VIEW ALL PRODUCTS</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--Big Img Display -->
+    <section class="section">
+        <div class="container">
+            <div class="trend">
+                <div class="trend_content">
+                    <p class="trend_p">70% OFF</p>
+                    <h2 class="trend_title">The Ultimate Portable Workhorse. Innovation at Your Fingertips !</h2>
+                    <a href="#" class="trend_btn">Buy Now</a>
+                </div>
+                <img src="laptop.png" alt="" class="trend_img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section">
+        <div class="container">
+            <div class="category">
+                <span class="para"></span>
+                <p class="category_p">Most Searched deals</p>
+            </div>
+            <div class="section_head">
+                <h3 class="title">Best selling Products</h3>
+            </div>
+            <div class="product">
+                <div class="card">
+                    <div class="card_area">
+                        <img src="Products/P1.jpg" alt="" class="card_image">
+                        <div class="card_icons">
+                            <i class="fa-regular fa-heart" class="hrt"></i>
+                            <i class="fa-regular fa-eye" class="eye"></i>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <h3 class="card_title">Roller Scates</h3>
+                        <p class="price">₹2999</p>
+                        <div class="ratings">
+                            <div class="rating_stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="rating_numbers">(230)</p>
+                        </div>
+                        <button class="add_cart" 
+                        data-id="P1"
+                        data-title="Roller Scates"
+                        data-image="Products/P1.jpg"
+                        data-price="2999"
+                        >Add to Cart</button>
+                    </div>
+                </div><div class="card">
+                    <div class="card_area">
+                        <img src="Products/P2.jpg" alt="" class="card_image">
+                        <div class="card_icons">
+                            <i class="fa-regular fa-heart" class="hrt"></i>
+                            <i class="fa-regular fa-eye" class="eye"></i>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <h3 class="card_title">Puffer Jackets</h3>
+                        <p class="price">₹999</p>
+                        <div class="ratings">
+                            <div class="rating_stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="rating_numbers">(325)</p>
+                        </div>
+                        <button class="add_cart" 
+                        data-id="P2"
+                        data-title="Puffer Jackets"
+                        data-image="Products/P2.jpg"
+                        data-price="999"
+                        >Add to Cart</button>
+                    </div>
+                </div><div class="card">
+                    <div class="card_area">
+                        <img src="Products/P3.jpg" alt="" class="card_image">
+                        <div class="card_icons">
+                            <i class="fa-regular fa-heart" class="hrt"></i>
+                            <i class="fa-regular fa-eye" class="eye"></i>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <h3 class="card_title">Maui Moisture</h3>
+                        <p class="price">₹599</p>
+                        <div class="ratings">
+                            <div class="rating_stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="rating_numbers">(540)</p>
+                        </div>
+                        <button class="add_cart" 
+                        data-id="P3"
+                        data-title="Maui Moisture"
+                        data-image="Products/P1.jpg"
+                        data-price="599"
+                        >Add to Cart</button>
+                    </div>
+                </div><div class="card">
+                    <div class="card_area">
+                        <img src="Products/P4.jpg" alt="" class="card_image">
+                        <div class="card_icons">
+                            <i class="fa-regular fa-heart" class="hrt"></i>
+                            <i class="fa-regular fa-eye" class="eye"></i>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <h3 class="card_title">Edura Facial Set</h3>
+                        <p class="price">₹1299</p>
+                        <div class="ratings">
+                            <div class="rating_stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="rating_numbers">(380)</p>
+                        </div>
+                        <button class="add_cart" 
+                        data-id="P4"
+                        data-title="Edura Facial Set"
+                        data-image="Products/P4.jpg"
+                        data-price="1299"
+                        >Add to Cart</button>
+                    </div>
+                </div><div class="card">
+                    <div class="card_area">
+                        <img src="Products/P5.jpg" alt="" class="card_image">
+                        <div class="card_icons">
+                            <i class="fa-regular fa-heart" class="hrt"></i>
+                            <i class="fa-regular fa-eye" class="eye"></i>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <h3 class="card_title">1000 Chairs</h3>
+                        <p class="price">₹999</p>
+                        <div class="ratings">
+                            <div class="rating_stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="rating_numbers">(180)</p>
+                        </div>
+                        <button class="add_cart" 
+                        data-id="P5"
+                        data-title="1000 Chairs"
+                        data-image="Products/P5.jpg"
+                        data-price="999"
+                        >Add to Cart</button>
+                    </div>
+                </div><div class="card">
+                    <div class="card_area">
+                        <img src="Products/P6.jpg" alt="" class="card_image">
+                        <div class="card_icons">
+                            <i class="fa-regular fa-heart" class="hrt"></i>
+                            <i class="fa-regular fa-eye" class="eye"></i>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <h3 class="card_title">Max Protien</h3>
+                        <p class="price">₹2950</p>
+                        <div class="ratings">
+                            <div class="rating_stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="rating_numbers">(653)</p>
+                        </div>
+                        <button class="add_cart" 
+                        data-id="P6"
+                        data-title="Max Protien"
+                        data-image="Products/P6.jpg"
+                        data-price="2950"
+                        >Add to Cart</button>
+                    </div>
+                </div><div class="card">
+                    <div class="card_area">
+                        <img src="Products/P7.jpg" alt="" class="card_image">
+                        <div class="card_icons">
+                            <i class="fa-regular fa-heart" class="hrt"></i>
+                            <i class="fa-regular fa-eye" class="eye"></i>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <h3 class="card_title">Lumix 3200L </h3>
+                        <p class="price">₹35,299</p>
+                        <div class="ratings">
+                            <div class="rating_stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="rating_numbers">(1266)</p>
+                        </div>
+                        <button class="add_cart" 
+                        data-id="P7"
+                        data-title="Lumix 3200L"
+                        data-image="Products/P7.jpg"
+                        data-price="35,299"
+                        >Add to Cart</button>
+                    </div>
+                </div><div class="card">
+                    <div class="card_area">
+                        <img src="Products/P8.jpg" alt="" class="card_image">
+                        <div class="card_icons">
+                            <i class="fa-regular fa-heart" class="hrt"></i>
+                            <i class="fa-regular fa-eye" class="eye"></i>
+                        </div>
+                    </div>
+                    <div class="card_body">
+                        <h3 class="card_title">Nike Men's Jorfan</h3>
+                        <p class="price">₹7999</p>
+                        <div class="ratings">
+                            <div class="rating_stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="rating_numbers">(760)</p>
+                        </div>
+                        <button class="add_cart" 
+                        data-id="P8"
+                        data-title="Nike Men's Jorfan"
+                        data-image="Products/P8.jpg"
+                        data-price="7999"
+                        >Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="#" class="btn_a">View More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section">
+        <div class="container official_services" >
+            <div class="service">
+                <i class="fa-solid fa-truck-fast fa-3x" style="color: #000000;" class="img_service"></i>
+                <h3 class="title_service">FREE DELIVERY</h3>
+                <p class="p_service">Free Delivery for all orders</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-handshake fa-3x" style="color: #000000;" class="img_service"></i>
+                <h3 class="title_service"> 24/7 CUSTOMER SUPPORT</h3>
+                <p class="p_service">Friendly Customer Service</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-money-bill-transfer fa-3x" style="color: #000000;" class="img_service"></i>
+                <h3 class="title_service">MONEY BACK GUARANTEE</h3>
+                <p class="p_service">Money Return within 30 Days</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_items">
+                <h3 class="footer_title">Know Us</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">Careers</li>
+                    <li class="li footer_itm">Blog</li>
+                    <li class="li footer_itm">Relations</li>
+                    <li class="li footer_itm">Devices</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <h3 class="footer_title">Support</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">S-22 Rajiv Nagar, India</li>
+                    <li class="li footer_itm">unishop@gmail.com</li>
+                    <li class="li footer_itm">+91 6535784514</li>
+                    <li class="li footer_itm">+91 3669578123</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <h3 class="footer_title">Earn with Us</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">Become an Affiliate</li>
+                    <li class="li footer_itm">Become a Seller</li>
+                    <li class="li footer_itm">Run ads on Product</li>
+                    <li class="li footer_itm">See More Make Money with Us</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <h3 class="footer_title">Help Desk</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">Your Account</li>
+                    <li class="li footer_itm">Your Orders</li>
+                    <li class="li footer_itm">Returns & Replacements</li>
+                    <li class="li footer_itm">Shipping Rates & Policies</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container bottom_container">
+                <p class="copyright">
+                    © Copyright Unishop 2024. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Linking JS file-->
+    <script src="./main.js"></script>
+</body>
+</html>
