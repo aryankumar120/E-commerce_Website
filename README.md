@@ -25,4 +25,4 @@ The e-commerce website project is a full-stack web development project that invo
 ![Screenshot 2024-02-15 175841](https://github.com/aryankumar120/E-commerce_Website/assets/134778655/c0e207f3-6e53-4e2b-9749-9ce095f72502)
 
 
-                                        Thank you for visiting!
+                                           Thank you for visiting!
